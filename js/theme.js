@@ -194,3 +194,9 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
+
+<script>
+    $('.end').click(function(){
+       alert('Data gagal di kirim. Email tidak terhubung')
+    });
+</script>
