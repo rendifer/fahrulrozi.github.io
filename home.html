@@ -423,10 +423,12 @@
 
     <script src="js/theme.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
-      $('.send').click(function(){
-         alert('Pesan email tidak terkirim. Silahkan hubungi saya melalui WhatsApp. Terimakasih 🙏')
-      });
+          $('.send').click(function(){
+              swal("Ooops!!", "Pesan email tidak terkirim. Silahkan hubungi saya melalui WhatsApp. Terimakasih 🙏", "error");
+          });
     </script>
   </body>
 </html>
