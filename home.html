@@ -25,10 +25,20 @@
     <link rel="stylesheet" href="css/mobile.css" />
 
     <link rel="stylesheet" href="css/skin/cool-gray.css" />
-  </head>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+      .disabled {
+        pointer-events:none;
+        opacity:0.6;
+      }
+    </style>
+
+  </head>
+  
   <body data-spy="scroll" data-target="#main-navbar">
-<!--     <div class="page-loader"></div> -->
+    <div class="page-loader"></div>
     <div class="body">
       <header id="header" class="header-main">
         <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -48,8 +58,8 @@
                 <li><a class="page-scroll" href="body">Home</a></li>
                 <li><a class="page-scroll" href="#about-section">About</a></li>
                 <li><a class="page-scroll" href="#ability-section">Ability</a></li>
-                <li><a class="page-scroll" href="#portfolio-section">Galery</a></li>
-                <li><a class="page-scroll" href="#contact-section">Contact</a></li>
+                <li><a class="page-scroll" href="#portfolio-section">Portfolio</a></li>
+                <li><a class="page-scroll" href="#contact-section">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -61,7 +71,7 @@
           <div class="caption text-center text-white" data-stellar-ratio="0.7">
               <div class="item">
                 <h1>I'm Fhahroul Rozi</h1>
-                <p>Freelancer website</p>
+                <p>Junior Programmer</p>
                 <div class="extra-space-l"></div>
                 <a class="btn btn-blank" href="#" target="_blank" role="button">View More!</a>
               </div>
@@ -89,7 +99,7 @@
                   <span class="rotate-box-icon"><i class="fa fa-users"></i></span>
                   <div class="rotate-box-info">
                     <h4>Who am I?</h4>
-                    <p>I am a student at the Muhammadiyah University of Tangerang, Faculty of Informatics Engineering 2019 entry year.</p>
+                    <p>I am a design at the Muhammadiyah University of Tangerang, Faculty of Informatics Engineering 2019 entry year.</p>
                   </div>
                 </a>
               </div>
@@ -99,7 +109,7 @@
                   <span class="rotate-box-icon"><i class="fa fa-diamond"></i></span>
                   <div class="rotate-box-info">
                     <h4>What is my job?</h4>
-                    <p>I'm a website freelancer or can be called a website builder when someone needs it.</p>
+                    <p>I am a Junior Programmer who makes web-based applications.</p>
                   </div>
                 </a>
               </div>
@@ -109,7 +119,19 @@
                   <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
                   <div class="rotate-box-info">
                     <h4>my experience?</h4>
-                    <p>I have worked at PT Purewex as a sales promotion in 2019, I have also worked at PT Smartfren as SGS Smartfren.</p>
+                    <p>
+                      I once worked at PT Tripasysfo Development as a Junior Programmer On 23 August 2022 - 12 February 2023</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
+                  <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
+                  <div class="rotate-box-info">
+                    <h4>my experience?</h4>
+                    <p>
+                      I once worked at PT Tripasysfo Development as a Junior Programmer On 23 August 2022 - 12 February 2023</p>
                   </div>
                 </a>
               </div>
@@ -118,7 +140,7 @@
         </div>
 
         <div class="extra-space-l"></div>
-</section>
+      </section>
         <section id="ability-section" class="page bg-style1">
             <div class="page-header-wrapper">
               <div class="container">
@@ -158,7 +180,7 @@
                     <div class="skill-bar wow slideInLeft" data-wow-delay="0.4s">
                       <div class="progress-lebel">
                         <h6>Html & Css</h6>
-                      </div>
+                      </div>     
                       <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
                       </div>
@@ -223,22 +245,40 @@
                 <div class="page-header-wrapper">
                   <div class="container">
                     <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                      <h2>Galery</h2>
+                      <h2>Portfolio</h2>
                       <div class="devider"></div>
                     </div>
                   </div>
                 </div>
                 <div class="portfoloi_content_area">
                   <div class="portfolio_menu" id="filters">
-                    <ul>
-                      <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
-                      <li><a href="#porfolio_menu" data-filter=".Organitation">Organitation</a></li>
-                      <li><a href="#porfolio_menu" data-filter=".student">Student</a></li>
+                    <ul style="margin-left: 5%;">
+                      <li class="disabled"><a href="#porfolio_menu" data-filter=".java">Java</a></li>
+                      <li class="active_prot_menu"><a href="#porfolio_menu" data-filter=".web">Web</a></li>
+                      <li class="disabled"><a href="#porfolio_menu" data-filter=".design" aria-disabled="true">Design</a></li>
                     </ul>
                   </div>
                   <div class="portfolio_content">
                     <div class="row" id="portfolio">
-                      <div class="col-xs-12 col-sm-4 appsDevelopment">
+                      <div class="col-xs-12 col-sm-4 web">
+                        <div class="portfolio_single_content">
+                          <img src="images/web/github-point-of-sale.png" alt="title" />
+                          <div>
+                            <a href="#">Point of Sale App / Kasir</a>
+                            <span>Laravel</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 web">
+                        <div class="portfolio_single_content">
+                          <img src="images/web/github-travel.png" alt="title" />
+                          <div style="margin-bottom: 20%;">
+                            <a href="#">Tour & Travel App</a>
+                            <span>Laravel</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-xs-12 col-sm-4 appsDevelopment">
                         <div class="portfolio_single_content">
                           <img src="galery/1.jpg" alt="title" />
                           <div>
@@ -256,7 +296,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 student">
+                      <div class="col-xs-12 col-sm-4 design">
                         <div class="portfolio_single_content">
                           <img src="galery/8.jpg" alt="title" />
                           <div>
@@ -265,16 +305,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 Organitation">
-                        <div class="portfolio_single_content">
-                          <img src="galery/3.jpg" alt="title" />
-                          <div>
-                            <a href="#">HIMTI closings</a>
-                            <span>Subtitle</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 appsDevelopment Organitation">
+                      
+                      <div class="col-xs-12 col-sm-4 appsDevelopment design">
                         <div class="portfolio_single_content">
                           <img src="galery/4.jpg" alt="title" />
                           <div>
@@ -283,7 +315,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 student">
+                      <div class="col-xs-12 col-sm-4 design">
                         <div class="portfolio_single_content">
                           <img src="galery/5.jpg" alt="title" />
                           <div>
@@ -292,16 +324,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 Organitation">
-                        <div class="portfolio_single_content">
-                          <img src="galery/6.jpg" alt="title" />
-                          <div>
-                            <a href="#">HIMTI bootcamp</a>
-                            <span>Subtitle</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 Organitation">
+                      <div class="col-xs-12 col-sm-4 design">
                         <div class="portfolio_single_content">
                           <img src="galery/7.jpg" alt="title" />
                           <div>
@@ -310,7 +333,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-4 Organitation">
+                      <div class="col-xs-12 col-sm-4 design">
                         <div class="portfolio_single_content">
                           <img src="galery/2.jpg" alt="title" />
                           <div>
@@ -318,7 +341,7 @@
                             <span>Subtitle</span>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -334,13 +357,15 @@
         <div class="page-header-wrapper">
           <div class="container">
             <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-              <h2>Contacts</h2>
+              <h2>Contact Us</h2>
               <div class="devider"></div>
               <p class="subtitle">All to contact me</p>
             </div>
           </div>
         </div>
 
+
+        
         <div class="contact wow bounceInRight" data-wow-delay="0.4s">
           <div class="container">
             <div class="row">
@@ -359,7 +384,7 @@
                       <a href="https://wa.me/+628971413088/?text=Hello%20Fhahroul%20Rozi" style="color: white;">
                         <i class="fa fa-whatsapp"></i>&nbsp; 
                           0897-1413-088
-                      </a>
+                        </a> 
                     </li>
                     <li>
                       <a href="mailto:fahrulrozi99321@gmail.com" style="color: white;">
@@ -367,7 +392,22 @@
                         fahrulrozi99321@gmail.com             
                       </a>
                     </li>
+                    <h4>Me Account</h4>
+                    <a class="" href="https://github.com/fahrulrozi123/" style="content: url('images/svg/github.png'); width: 20px; height: 20px; background-color: aliceblue;" rel="tooltip" title="Follow me on linkedin"></a>
+                    <a class="" href="https://www.linkedin.com/mwlite/in/fhahroul-rozi-a293261b4" style="content: url('images/svg/linkedin.png'); width: 20px; height: 20px; background-color: aliceblue; margin-left: 2%;" rel="tooltip" title="Follow me on linkedin"></a>
+                    <a class="" href="https://instagram.com/fahrulrozi704?igshid=NDU3Y2E5ZmY=" style="content: url('images/svg/instagram.png'); width: 20px; height: 20px; background-color: aliceblue; margin-left: 2%;" rel="tooltip" title="Follow me on linkedin"></a>
                   </ul>
+                  <!-- <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
+                    <li>
+                      <a href="https://www.free-css.com/free-css-templates" class="">
+                          <i class="fa fa-facebook"></i>
+                      </a>
+                  </li>
+                    <li><a href="https://www.free-css.com/free-css-templates" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.free-css.com/free-css-templates" class="fa fa-dribbble"></a></li>
+                    <li><a href="https://www.free-css.com/free-css-templates" class="fa fa-behance"></a></li>
+                    <li><a href="https://www.free-css.com/free-css-templates" class="fa fa-google-plus"></a></li>
+                  </ul> -->
                 </div>
               </div>
 
@@ -394,7 +434,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       <footer class="text-off-white">
         <div class="footer">
@@ -402,13 +442,14 @@
             <p class="copyright">
               Copyright &copy; 2022 - By <a href="#" class="theme-author">Fahrul rozi developer</a>
             </p>
+            
           </div>
         </div>
       </footer>
 
       <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a>
     </div>
-
+    
     <script src="inc/jquery/jquery-1.11.1.min.js"></script>
     <script src="inc/bootstrap/js/bootstrap.min.js"></script>
     <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
