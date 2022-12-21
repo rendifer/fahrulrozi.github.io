@@ -45,6 +45,33 @@
     .p{
       line-height: 1.2;
     }
+    li.dropdown {
+		display: inline-block;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  
+    .dropdown-menu a:hover {
+      color: #ffff !important;
+    }
+    .dropdown-menu {
+      position: absolute;
+      display: none;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      background-color: #f9f9f9;
+    }
+  
+    .dropdown-menu a {
+      color: #3c3c3c !important;
+    }
+  
+    .dropdown-menu a:hover {
+      color: #ffff !important;
+      background: #363940 !important;
+    }
   </style>
 </head>
 <body data-spy="scroll" data-target="#main-navbar">
@@ -67,7 +94,12 @@
               <li><a class="page-scroll" href="home.html">Home</a></li>
               <li><a class="page-scroll" href="home.html">About</a></li>
               <li><a class="page-scroll" href="home.html">Ability</a></li>
-              <li class="active"><a class="page-scroll" href="home.html">Portfolio</a></li>
+              <li class="active dropdown"><a class="page-scroll" href="#">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="detailpos.html">Aplikasi POS</a></li>
+                  <li><a href="detailtravel.html">Aplikasi Travel</a></li>
+                </ul>
+              </li>
               <li><a class="page-scroll" href="home.html">Contact Us</a></li>
             </ul>
           </div>
@@ -129,6 +161,12 @@
                     </a>            
                 </div>
             </div>
+            <div class="desk">
+              <h2><b>Deskripsi Aplikasi</b></h2>
+              <p>
+                Aplikasi ini dibuat berdasarkan identifikasi masalah yang ada disebuah toko(retail) yang dimana proses transaksi masih dilakukan secara manual. Dengan adanya aplikasi kasir(POS) ini bisa mempermudah dan mempercepat kasir dalam melakukan transaksi sehingga proses transaksi menjadi lebih cepat dan efektif
+              </p>
+            </div><br><br>
                 <a class="btn btn-primary" href="home.html"  style="background-color: #363940;"> < Back</a>
             </div>
           </div>

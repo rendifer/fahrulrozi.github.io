@@ -45,6 +45,33 @@
     .p{
       line-height: 1.2;
     }
+    li.dropdown {
+		display: inline-block;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  
+    .dropdown-menu a:hover {
+      color: #ffff !important;
+    }
+    .dropdown-menu {
+      position: absolute;
+      display: none;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      background-color: #f9f9f9;
+    }
+  
+    .dropdown-menu a {
+      color: #3c3c3c !important;
+    }
+  
+    .dropdown-menu a:hover {
+      color: #ffff !important;
+      background: #363940 !important;
+    }
   </style>
 </head>
 <body data-spy="scroll" data-target="#main-navbar">
@@ -67,7 +94,12 @@
               <li><a class="page-scroll" href="home.html">Home</a></li>
               <li><a class="page-scroll" href="home.html">About</a></li>
               <li><a class="page-scroll" href="home.html">Ability</a></li>
-              <li class="active"><a class="page-scroll" href="home.html">Portfolio</a></li>
+              <li class="active dropdown"><a class="page-scroll" href="#">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li><a href="detailpos.html">Aplikasi POS</a></li>
+                  <li class="active"><a href="detailtravel.html">Aplikasi Travel</a></li>
+                </ul>
+              </li>
               <li><a class="page-scroll" href="home.html">Contact Us</a></li>
             </ul>
           </div>
@@ -129,6 +161,12 @@
                     </a>            
                 </div>
             </div>
+            <div class="desk">
+              <h2><b>Deskripsi Aplikasi</b></h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div><br><br>
                 <a class="btn btn-primary" href="home.html"  style="background-color: #363940;"> < Back</a>
             </div>
           </div>
